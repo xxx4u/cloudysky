@@ -7,14 +7,14 @@
         <target device="android">false</target>
         <target device="blackberry">false</target>
     </deployment-targets>
-    <sdk-version>1.8.2</sdk-version>
-    <id>cloud.quepimquepam.com</id>
-    <name>Cloud</name>
-    <version>1.0</version>
-    <publisher>carlos</publisher>
-    <url>http://cloud.quepimquepam.com</url>
-    <description>not specified</description>
-    <copyright>2012 by Carlos Buenosvinos</copyright>
+    <sdk-version>2.0.1.GA2</sdk-version>
+    <id>cloudysky.carlos.io</id>
+    <name>CloudySky</name>
+    <version>1.0.0</version>
+    <publisher>Carlos Buenosvinos</publisher>
+    <url>http://cloudysky.carlos.io</url>
+    <description>Fill a blue sky with clouds, move them, stop them.</description>
+    <copyright>2012 - Carlos Buenosvinos (carlos.io)</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>

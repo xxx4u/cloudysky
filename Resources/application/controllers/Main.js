@@ -1,4 +1,5 @@
-var MainController = require('/library/Qpqp/Controller/Abstract');
+// Extends BetaC Simple Controller
+var MainController = require('/library/BetaC/Controller/Simple');
 
 MainController.prototype.main = function() {
 	var SkyWindow = require('/application/views/windows/Sky');
