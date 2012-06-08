@@ -1,21 +1,23 @@
 function SkyWindow() {
-	var Sky = require('/application/models/Sky');
-	var Cloud = require('/application/models/Cloud');
+	var Sky = require('/application/models/Sky').Sky;
+	var Cloud = require('/application/models/Cloud').Cloud;
 		
 	var that = Ti.UI.createWindow({
 		backgroundColor:'#ffffff',
 		navBarHidden:true,
 		exitOnClose:true
 	});
-		
-	var mySky = new Sky(768, 1024);
+
+	var width = Titanium.Platform.displayCaps.platformWidth;
+	var height = Titanium.Platform.displayCaps.platformHeight;
+	var mySky = new Sky(width, height);
 	that.add(mySky);
 
 	var cloud = null;
 	for(var i=1; i<10; i++) {
-		cloud = new Cloud(10 * Math.random() - 5);
-		cloud.left = Math.random() * 768;
-		cloud.top = Math.random() * 1024;
+		cloud = new Cloud(10 * Math.random() - 5, width / 1024);
+		cloud.left = Math.random() * width;
+		cloud.top = Math.random() * height;
 		mySky.addCloud(cloud);
 	}
 
@@ -26,4 +28,4 @@ function SkyWindow() {
 	return that;
 }
 
-exports = SkyWindow;
+module.exports.SkyWindow = SkyWindow;

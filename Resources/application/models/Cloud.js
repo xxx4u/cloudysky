@@ -1,4 +1,4 @@
-function Cloud(speed) {
+function Cloud(speed, scale) {
 	var _speed = speed ? speed : 0;
 	var _stopped = false;
 
@@ -6,8 +6,8 @@ function Cloud(speed) {
 		image:'/assets/images/cloud.png',
 		left:0,
 		top:0,
-		width:287,
-		height:208
+		width:287 * scale,
+		height:208 * scale
 	});
 
 	self.speed = function() {
@@ -33,4 +33,4 @@ function Cloud(speed) {
 	return self;
 }
 
-module.exports = Cloud;
+module.exports.Cloud = Cloud;

@@ -1,5 +1,4 @@
 function Sky(width, height) {
-	var Cloud = require('/application/models/Cloud');
 	var _width = width;
 	var _height = height;
 	var _clouds = [];
@@ -41,6 +40,6 @@ function Sky(width, height) {
 	}
 
 	return self;
-}
+};
 
-module.exports = Sky;
+module.exports.Sky = Sky;

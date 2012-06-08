@@ -10,4 +10,4 @@ SimpleController.prototype._open = function(window) {
 	this._currentWindow = window;
 };
 
-module.exports = SimpleController;
+module.exports.SimpleController = SimpleController;

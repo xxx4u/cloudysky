@@ -1,2 +1,2 @@
-var MainController = require('/application/controllers/Main');
+var MainController = require('/application/controllers/Main').MainController;
 new MainController().main();
